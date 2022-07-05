@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>进度条</title>
+    <style>
+        .bar {
+            width: 200px;
+            height: 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+            margin: 50px auto;
+        }
+        .bar_in {
+            width: 50%;
+            height: 100%;
+            background-color: red;
+            /* transition: 过度属性（一般写all） 过度时间; */
+            /* 过渡：谁过度给谁加 */
+            transition: all 1s;
+        }
+        .bar:hover .bar_in {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <div class="bar_in"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "27888844",
+      "name": "咖啡",
+      "font_class": "kafei",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "27923659",
+      "name": "汉堡",
+      "font_class": "hanbao",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "28566197",
+      "name": "矿泉水",
+      "font_class": "kuangquanshui",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "28949360",
+      "name": "黄油",
+      "font_class": "huangyou",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    }
+  ]
+}

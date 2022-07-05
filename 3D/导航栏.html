@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D导航栏</title>
+  </head>
+  <style>
+    body > div {
+      width: 600px;
+      height: 100px;
+      border: 2px solid rgb(3, 145, 247);
+      margin: 100px auto;
+      perspective: 600px;
+    }
+    .box {
+      float: left;
+      position: relative;
+      margin-left: 24px;
+      margin-top: 35px;
+      width: 120px;
+      height: 30px;
+      transform-style: preserve-3d;
+      transition: all 0.3s;
+    }
+    .box:hover {
+      transform: rotateX(90deg);
+    }
+    .box_front,
+    .box_bottom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 30px;
+      text-align: center;
+    }
+    .box_front {
+      background-color: hotpink;
+      color: #fff;
+      transform: translateZ(15px);
+    }
+    .box_bottom {
+      background-color: purple;
+      color: #fff;
+      transform: translateY(16px) rotateX(-90deg);
+    }
+  </style>
+  <body>
+    <div>
+      <div class="box">
+        <div class="box_front">老肥猪上屠</div>
+        <div class="box_bottom">挨刀的货</div>
+      </div>
+      <div class="box">
+        <div class="box_front">种地不出苗</div>
+        <div class="box_bottom">坏种</div>
+      </div>
+      <div class="box">
+        <div class="box_front">骆驼生驴子</div>
+        <div class="box_bottom">怪种</div>
+      </div>
+      <div class="box">
+        <div class="box_front">五百钱分两下</div>
+        <div class="box_bottom">二百五</div>
+      </div>
+    </div>
+  </body>
+</html>

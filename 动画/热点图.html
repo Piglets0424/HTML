@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>热点图</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(65, 66, 66);
+    }
+    .map {
+      position: relative;
+      width: 747px;
+      height: 617px;
+      margin-top: 50px;
+      margin-left: 250px;
+      background: url(../images/map.png) no-repeat;
+    }
+    .city1 {
+      position: absolute;
+      top: 229px;
+      right: 190px;
+    }
+    .city2 {
+      position: absolute;
+      top: 490px;
+      right: 78px;
+    }
+    .city3 {
+      position: absolute;
+      top: 538px;
+      right: 189px;
+    }
+    .dotted {
+      width: 8px;
+      height: 8px;
+      background-color: #09f;
+      border-radius: 50%;
+    }
+    .map div[class^="city"] div[class^="pulse"] {
+      position: absolute;
+      /* 水平居中 */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 8px;
+      /* 阴影 */
+      box-shadow: 0 0 12px #09f;
+      border-radius: 50%;
+      /* 调用动画 */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      animation: pulse 1.2s linear infinite;
+    }
+    .pulse2 {
+      animation-delay: 0.4s !important;
+    }
+    .pulse {
+      animation-delay: 0.8s !important;
+    }
+    /* 波纹动画 */
+    @keyframes pulse {
+      0% {
+      }
+      70% {
+        width: 40px;
+        height: 40px;
+        /* 透明度 */
+        opacity: 1;
+      }
+      100% {
+        width: 70px;
+        height: 70px;
+        opacity: 0;
+      }
+    }
+  </style>
+  <body>
+    <div class="map">
+      <div class="city1">
+        <div class="dotted"></div>
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="pulse3"></div>
+      </div>
+      <div class="city2">
+        <div class="dotted"></div>
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="pulse3"></div>
+      </div>
+      <div class="city3">
+        <div class="dotted"></div>
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="pulse3"></div>
+      </div>
+    </div>
+  </body>
+</html>

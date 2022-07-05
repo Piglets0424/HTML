@@ -1,0 +1,312 @@
+// 设置页面不超过750px
+@media screen and (min-width) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.woff2?t=1656731186606') format('woff2'),
+        url('../font/iconfont.woff?t=1656731186606') format('woff'),
+        url('../font/iconfont.ttf?t=1656731186606') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 15.9975px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: .3333rem;
+    color: #707070;
+}
+
+body {
+    position: relative;
+    min-width: 320.0025px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #F2F4F7;
+}
+
+//定义背景色
+.bg {
+    background-color: #fff;
+}
+
+/* 头部模块 */
+header {
+    height: 1.0667rem;
+    font-size: .4667rem;
+    color: #1c1c1c;
+    .bg();
+    border-bottom: .0133rem solid #EAEAEA;
+    text-align: center;
+    line-height: 1.0667rem;
+}
+
+/* 导航模块 */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    .bg();
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33.333%;
+
+        img {
+            display: block;
+            width: 1.8533rem;
+            height: 1.8533rem;
+            margin-top: .5867rem;
+        }
+    }
+}
+
+/* go模块 */
+.go {
+    margin: .8rem .1333rem .5733rem .24rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* 就业指导 */
+.content {
+    position: relative;
+    .bg();
+    margin-top: .1333rem;
+}
+
+.con_hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .5067rem;
+    padding: .5333rem .32rem;
+
+    h4 {
+        font-size: .3733rem;
+        color: #333333;
+
+        img {
+            width: .5067rem;
+            height: .5067rem;
+            vertical-align: bottom;
+        }
+    }
+
+    a {
+        font-size: .2933rem;
+        color: #999999;
+
+        &::after {
+            content: '\e62a';
+            font-family: "iconfont" !important;
+        }
+    }
+}
+
+.get_job {
+    width: 7.2rem;
+    height: 6.8rem;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        transform: scale(0.8);
+        opacity: .4;
+
+        a {
+            width: 4.5067rem;
+            height: 5.0667rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p {
+            width: 4.5067rem;
+            margin-top: .32rem;
+            font-size: .3333rem;
+            color: #333333;
+        }
+    }
+
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        transform: scale(1);
+        opacity: 1;
+        z-index: 999;
+    }
+
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    outline: none;
+    top: 55%;
+
+    &:after {
+        font-size: .5333rem;
+        color: #333;
+    }
+}
+
+/* 充电学习 */
+.charge_learn {
+    height: 5.3333rem;
+    overflow: hidden;
+    padding: .28rem;
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        height: 4.5333rem;
+        width: 3.8533rem;
+        box-shadow: 0 0 .1333rem rgba(0, 0, 0, 0.1);
+        border-radius: .1333rem;
+
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        a {
+            span {
+                display: block;
+                width: 3.6267rem;
+                height: 2.28rem;
+                margin: .12rem .0933rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            h4 {
+                font-size: .3333rem;
+                font-weight: 400;
+                color: #333740;
+                text-align: left;
+                padding: .16rem .1867rem;
+            }
+
+            h6 {
+                color: #999999;
+                text-align: left;
+                padding: .16rem .2667rem;
+                font-weight: 400;
+
+                strong {
+                    color: #FF4400;
+                }
+            }
+        }
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.charge_learn_bottom {
+    padding-bottom: 1.6rem;
+}
+
+/* 底部模块 */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 1.52rem;
+    z-index: 9999;
+    .bg();
+    border-top: .0133rem solid #e2e2e2;
+
+    a {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    span {
+        font-size: .2933rem;
+        color: #666;
+    }
+
+    .iconfont {
+        margin-bottom: 9.9975px;
+        display: block;
+        font-size: .5333rem;
+        width: .5333rem;
+        height: .5333rem;
+
+    }
+}

@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.ttf?t=1656231767081") format("truetype");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  height: 84px;
+  border-bottom: 2px solid #c81523;
+}
+header img {
+  padding-top: 16px;
+}
+.registerarea {
+  height: 522px;
+  margin-top: 20px;
+  border: 1px solid #dfdfdf;
+}
+.registerarea h3 {
+  height: 41px;
+  font-size: 18px;
+  background-color: #ececec;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 0 10px;
+  line-height: 41px;
+}
+.registerarea h3 span {
+  float: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+.registerarea h3 span a {
+  color: #c81523;
+}
+.reg_form {
+  width: 600px;
+  margin: 50px auto 0;
+}
+.reg_form ul li {
+  padding-bottom: 20px;
+}
+.reg_form ul li label {
+  display: inline-block;
+  width: 88px;
+  text-align: right;
+}
+.reg_form ul li:nth-child(-n + 5) input {
+  width: 242px;
+  height: 37px;
+  border: 1px solid #999999;
+}
+.error {
+  margin-left: 10px;
+  color: red;
+}
+.error::before {
+  font-family: "iconfont" !important;
+  content: "\e6a5";
+  color: red;
+  margin-right: 4px;
+}
+.success {
+  margin-left: 10px;
+  color: green;
+}
+.success::before {
+  font-family: "iconfont" !important;
+  content: "\e627";
+  color: green;
+  margin-right: 4px;
+}
+.safe {
+  padding-left: 162px;
+  margin-top: -15px;
+}
+.safe em {
+  padding: 0 12px;
+  color: #fff;
+}
+.safe em:nth-child(1) {
+  margin: 0 1px 0 10px;
+  background-color: #de1111;
+}
+.safe em:nth-child(2) {
+  background-color: #40b83f;
+  margin-right: 1px;
+}
+.safe em:nth-child(3) {
+  background-color: #f79100;
+}
+.agree {
+    margin-top: 20px;
+    padding-left: 90px;
+}
+.agree input {
+    vertical-align: middle;
+}
+.agree a {
+    color: #1ba1e6;
+}
+.btn {
+    width: 200px;
+    height: 34px;
+    background-color: #c81523;
+    font-size: 14px;
+    color: #fff;
+    margin: 20px 0 0 100px;
+}
+/* 版权模块 */
+.mod_copyright {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .mod_copyright .links a {
+    padding:0 16px 0 14px;
+  }
+  .mod_copyright .copright {
+    padding-top: 16px;
+    line-height: 20px;
+  }

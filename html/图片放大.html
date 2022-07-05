@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片放大</title>
+</head>
+<style>
+    div {
+        overflow: hidden;
+        width: 500px;
+        height: 282px;
+        margin: 100px auto;
+    }
+    img {
+        width: 500px;
+        transition: all 0.2s;
+    }
+    div:hover img {
+        transform: scale(1.1);
+    }
+</style>
+<body>
+    <div>
+        <img src="../images/8561021.jpg" alt="">
+    </div>
+</body>
+</html>

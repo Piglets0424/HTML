@@ -1,0 +1,58 @@
+{
+  "id": "3480284",
+  "name": "黑马面面",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "630094",
+      "name": "向右箭头",
+      "font_class": "xiangyoujiantou",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "630095",
+      "name": "向左箭头",
+      "font_class": "xiangzuojiantou",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "201228",
+      "name": "3.1我的",
+      "font_class": "31wode",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "509171",
+      "name": "专项检查",
+      "font_class": "zhuanxiangjiancha",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "1312049",
+      "name": "首页-首页",
+      "font_class": "shouye-shouye",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "2811149",
+      "name": "评价",
+      "font_class": "pingjia",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "5979972",
+      "name": "双右箭头-01",
+      "font_class": "shuangyoujiantou-",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    }
+  ]
+}
