@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @media screen and (min-width: 750px) {
+=======
+@media screen and (min-width:750px) {
+>>>>>>> 99e628c0469605d6ad417eff0359d9fd9ab692ca
   html {
     font-size: 75px !important;
   }
