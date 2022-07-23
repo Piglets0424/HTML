@@ -9,9 +9,12 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="./js/index.js"></script>
     <title>携程dome</title>
   </head>
   <body>
+     <!-- 返回顶部模块 -->
+     <div class="goBack"></div>
     <!-- 搜索模块 -->
     <div class="search">
       <div class="search_input">
@@ -21,8 +24,20 @@
       <a class="user">我 的</a>
     </div>
     <!-- 焦点图模块 -->
-    <div class="foucs">
-      <img src="upload/focus.jpg" alt="" />
+    <div class="focus">
+      <ul>
+        <li><img src="upload/focus3.jpg" alt="" /></li>
+        <li><img src="upload/focus1.jpg" alt="" /></li>
+        <li><img src="upload/focus2.jpg" alt="" /></li>
+        <li><img src="upload/focus3.jpg" alt="" /></li>
+        <li><img src="upload/focus1.jpg" alt="" /></li>
+      </ul>
+      <!-- 小圆点 -->
+      <ol>
+        <li class="current"></li>
+        <li></li>
+        <li></li>
+      </ol>
     </div>
     <!-- 局部导航栏 -->
     <ul class="local_nav">

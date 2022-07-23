@@ -26,6 +26,19 @@ img {
   vertical-align: top;
 }
 
+/* goBack */
+
+.goBack {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  background: url(../images/back.png) no-repeat;
+  background-size: 38px 38px;
+}
+
 /* 搜索模块 */
 .search {
   display: flex;
@@ -42,6 +55,7 @@ img {
   background-color: #f6f6f6;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  z-index: 999;
 }
 .search_input {
   position: relative;
@@ -83,13 +97,50 @@ img {
 }
 
 /* 焦点图模块 */
-.foucs {
+/* .foucs {
   margin-top: 44px;
   height: 107px;
 }
 .foucs img {
   width: 100%;
   height: 100%;
+} */
+
+/* focus */
+.focus {
+  position: relative;
+  padding-top: 44px;
+  overflow: hidden;
+}
+.focus img {
+  width: 100%;
+}
+.focus ul {
+  overflow: hidden;
+  width: 500%;
+  margin-left: -100%;
+}
+.focus ul li {
+  float: left;
+  width: 20%;
+}
+.focus ol {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  margin: 0;
+}
+.focus ol li {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  list-style: none;
+  border-radius: 2px;
+  transition: all .3s;
+}
+.focus ol li.current {
+  width: 15px;
 }
 
 /* 局部导航栏模块 */
