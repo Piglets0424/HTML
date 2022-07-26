@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>边框图片</title>
+    <style>
+      .panel {
+        position: relative;
+        border: 30px solid transparent;
+        border-width: 51px 38px 20px 132px;
+        border-image-source: url(../images/border.png);
+        border-image-slice: 51 38 20 132;
+      }
+      .content{
+        position: absolute;
+        top: -51px;
+        right: -38px;
+        bottom: -20px;
+        left: -132px;
+        padding: 24px 34px;
+      }
+
+      .box{
+        width: 300px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel box">
+        <div class="content">使用时设置面板大小</div>
+    </div>
+  </body>
+</html>
